@@ -3,12 +3,12 @@ on:
   push:
 
 jobs:
-  Checkout Code:
+  Checkout_Code:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v7
-  Printing Folders:
+  Printing_Folders:
     runs-on: ubuntu-latest
     steps:
       - name: Print Folders
