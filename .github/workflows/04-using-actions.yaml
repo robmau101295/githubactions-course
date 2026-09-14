@@ -3,13 +3,12 @@ on:
   push:
 
 jobs:
-  Checkout_Code:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v7
-  Printing_Folders:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print Folders
-        run: ls -la
+      - name: Printing Folders
+        run: |
+          echo "Printing the folders in the current directory"
+          ls -al
